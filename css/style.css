@@ -1,0 +1,1313 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root
+{
+    --darkBlue:#022375;
+    --lightBlue:#065e9d;
+    --white:white;
+    --blue:#0d81d9;
+    --blue2:#065e9d;
+    --gray:rgb(159, 154, 154);
+    --black:black;
+}
+.container
+{
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    width: 80%;
+}
+.container .content1 
+{
+    text-align: center;
+}
+.container .content1 p.p1
+{
+    color: var(--blue);
+    font-weight: 500;
+}
+.container .content1 p.p2
+{
+    color: var(--darkBlue);
+    font-size: 25px;
+    font-weight: 900;
+    margin: 15px 0px;
+}
+p
+{
+    color: var(--gray);
+}
+/* start header */
+header
+{
+    background-color: rgb(220, 229, 229);
+    padding: 5px;
+    position: fixed;
+    width: 100vw;
+    top: 0px;
+    z-index: 999;
+}
+header .container
+{
+    display: flex;
+    justify-content:  space-between;
+    align-items: center;
+}
+header .container a.logo
+{
+    font-size: 30px;
+    font-weight: 900;
+    text-decoration: none;
+}
+header .container a.logo img
+{
+    width: 30px;
+    height: 30px;
+}
+header .container nav a
+{
+    margin-left: 20px;
+    text-decoration: none;
+    color:var(--gray) ;
+    font-weight: 500;
+    transition: 0.5s ease-in-out;
+}
+header .container nav a:hover
+{
+    color: var(--blue);
+}
+header .container nav button
+{
+    padding: 5px 15px;
+    color: white;
+    background-color: var(--blue);
+    border-width: 0px;
+    border-radius: 25px;
+    font-weight: 700;
+    margin-left: 10px;
+    cursor: pointer;
+}
+header .container nav i
+{
+    display: none;
+}
+/* end header */
+/* start side menu */
+.side-menu 
+{
+    width: 250px;
+    text-align: center;
+    background-color: var(--darkBlue);
+    padding: 30px 0px;
+    position: fixed;
+    top: 0px;
+    right: -300px;
+    z-index: 9999;
+    transition: 0.8s;
+}
+.side-menu a 
+{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+    color: white;
+    margin: 30px 0px;
+
+}
+.side-menu a:hover 
+{
+    color: #022375;
+    background-color: aliceblue;
+}
+.side-menu button
+{
+    padding: 5px 15px;
+    color: white;
+    background-color: var(--blue);
+    border-width: 0px;
+    border-radius: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.side-menu span i
+{
+     font-size: 35px;
+     color: red;
+     background-color: white;
+     border-radius: 50%;
+     margin-left: 70%;
+     cursor: pointer;
+}
+.show 
+{
+    right: 0px;
+}
+/* end side menu */
+/* start sec one */
+.one .container
+{
+    display: flex;
+    padding-top: 100px;
+    /* justify-content: space-around; */
+}
+.one .container .content
+{
+    background-image: url(../imgs/shape-a.png);
+    
+}
+.one .container .content .main-title
+{
+    display: flex;
+    margin: 30px;
+}
+.one .container .content .main-title p.p1
+{
+    font-size: 60px;
+    color: var(--darkBlue);
+    font-weight: 900;
+}
+.one .container .content .main-title p.p2 ,.one .container .content .main-title p.p3
+{
+    font-size: 25px;
+    color: red;
+    font-weight: 700;
+    padding-top: 5px;
+}
+.one .container .content .main-title p.p3
+{
+    color: var(--darkBlue);
+}
+.one .container .content .para
+{
+    width: 75%;
+}
+.one .container .content .links
+{
+    margin:60px 0px 60px 30px;  
+}
+.one .container .content .links a
+{
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--blue);
+    font-size: 15px;
+}
+.one .container .content .links a.colored
+{
+    background-color: var(--blue);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 25px;
+}
+.one .container .content .numbers
+{
+    display: flex;
+    margin: 50px 0px;
+}
+.one .container .content .numbers p
+{
+    margin-right: 30px;
+}
+.one .container .content .numbers .num
+{
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+}
+.one .container img
+{
+    width: 500px;
+    height: auto;
+}
+.up
+{
+    position: fixed;
+    bottom: 10px;
+    right: -50px;
+    background-color: #096eb6;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+    z-index: 99999;
+}
+.up.show
+{
+    right: 10px;
+}
+/* end sec one */
+
+/* start sec two */
+.two
+{
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+.two .container
+{
+    display: flex;
+}
+.two .container .content
+{
+    width: 45%;
+}
+.two .container .content p.para2 
+{
+    margin:60px 0px;
+}
+.two .container .content p span 
+{
+    color: black;
+    font-weight: 600;
+}
+.two .container .content .para1
+{
+    color: var(--blue);
+    font-weight: 500;
+}
+.two .container .content .title 
+{
+    font-size: 30px;
+    color: var(--darkBlue);
+    font-weight: 900;
+    margin: 25px 0px 15px 0px ;
+    font-family: 'Times New Roman', Times, serif;
+}
+.two .container .questions
+{
+    margin:30px auto;
+    box-shadow:-2px -2px 5px rgba(0, 0, 0, 10%) ;
+    height: 330px;
+    transition:0.5s ease-in-out ;
+}
+.two .container .questions:hover 
+{
+    box-shadow:-2px -2px 5px rgba(0, 0, 0, 50%) ;
+    transform: translateY(-10px);
+}
+.two .container .questions p
+{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--darkBlue);
+    padding: 10px;
+}
+.two .container .questions a 
+{
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--blue);
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+
+}
+.two .container .questions hr 
+{
+    display: none;
+}
+.two .container .questions i 
+{
+    padding: 15px 10px 15px 30px;
+    margin-left: auto;
+}
+/* end sec two */
+/* start sec three */
+ .three
+ {
+    margin-bottom: 100px;
+ }
+.three .container .cards
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,auto));
+    margin: auto;
+    margin-top: 40px;
+    background-color: rgb(247, 249, 251);
+    gap:50px ;
+    padding: 30px ; 
+}
+.container .cards div  
+{
+    box-shadow:-2px -2px 5px rgba(0, 0, 0, 30%) ; 
+    background-color: var(--white);
+    transition: 0.5s ease-in-out;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.container .cards div:hover 
+{
+    box-shadow:-2px -2px 5px rgba(0, 0, 0, 50%) ;
+    transform: translateY(-10px);
+}
+.three .container .cards div img
+{
+    max-width: 70%;
+    margin-left: 40px;
+}
+.three .container .cards div hr 
+{
+    padding: 2px;
+    background-color: #065e9d;
+    margin-bottom: 15px;
+}
+.three .container .cards div p 
+{
+    padding-left: 15px;
+}
+.three .container .cards div p.title
+{
+    color: var(--blue);
+}
+.three .container .btn
+{
+    margin: 40px auto;
+}
+.three .container .btn a 
+{
+     background-color: var(--blue);
+     color: var(--white);
+     text-decoration: none;
+     padding: 7px;
+     border-radius: 25px;
+     margin-left: 41%;
+}
+/* end sec three */
+/* start sec four */
+
+/* end sec four */
+.four
+{
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+.four .container .content1 p.p3
+{
+    width: 70%;
+    margin: auto;
+}
+.four .container .cards 
+{
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(auto-fill,minmax(250px,auto));
+    background-color: rgb(247, 249, 251);
+    margin-top: 60px;
+    justify-content: space-between;
+    
+    padding: 70px 30px 20px 30px;
+    gap: 50px;
+}
+.four .container .cards div 
+{
+    position: relative;
+    height: 180px;
+    margin-bottom: 20px;
+}
+.four .container .cards div img 
+{
+    position: absolute;
+    border-radius: 50%;
+    left: 70%;
+    top:-25% ;
+    width: 70px;
+    height: 70px;
+}
+.four .container .cards div p.title
+{
+    color: var(--blue);
+    padding-left: 15px;
+}
+.four .container .cards div p.para
+{
+    color: var(--gray);
+    padding-left: 15px;
+    padding-top: 25px;
+}
+.four .container .cards div p.para b 
+{
+    color: black;
+}
+.four .container .last 
+{
+  display: flex;
+  justify-content: center;
+  margin: 30px 0px;
+  flex-wrap: wrap;
+}
+.four .last p
+{
+    width: 50%;
+    text-align: center;
+}
+.four .last p b
+{
+    color: var(--blue);
+}
+.four .last span i
+{
+    color: var(--blue);
+    font-size: 30px;
+    margin-top: 5px;
+} 
+.four .last a.button
+{
+    background-color: var(--blue);
+    color: white;
+    height:30px;
+    text-decoration: none;
+    padding: 0px 10px 5px 10px;
+    border-radius: 25px;
+}
+.four .last a.button i 
+{
+    padding:5px 10px 5px 0px;
+}
+/* end sec four */
+/* start sec five */
+.five 
+{
+    margin-bottom: 100px;
+}
+.five .container .content1 p.p3
+{
+    width: 60%;
+    margin: auto;
+}
+.five .container .cards div img 
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left:25px;
+}
+.five .container .cards
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(220px,auto));
+    background-color: rgb(247, 249, 251);
+    margin-top: 70px;
+    gap: 30px;
+    padding: 30px;
+}
+.five .container .cards div 
+{
+    padding: 10px;
+    text-align: center;
+}
+.five .container .cards div p.p1 
+{
+    color: var(--blue);
+    padding: 10px 0px;
+}
+.five .container .links
+{
+    margin-top: 60px;
+    text-align: center;
+}
+.five .links a
+{
+    
+   text-decoration: none;
+   color: var(--blue);
+
+}
+.five .links a.colored
+{
+   background-color: var(--blue);
+   color: var(--white);
+   padding: 5px 5px;
+   margin-right: 40px;
+   border-radius: 25px;
+}
+.five .links a i
+{
+   padding-left: 15px;
+}
+
+/* end sec five */
+/* start sec six */
+.six
+{
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+.six .container .parent 
+{
+   display: flex;
+   justify-content: space-around;
+   background-color: rgb(247, 249, 251);
+   padding-top: 15px;
+
+}
+.six .container .parent .content
+{
+    max-width: 500px;
+}
+.six .container .parent img 
+{
+    width: 300px;
+    height: 400px;
+    margin-top: 50px;
+}
+.six .container .parent .content .head
+{
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+    padding:25px 15px;
+}
+.six .container .parent .content p 
+{
+    margin-bottom: 20px;
+    padding-left: 15px;
+}
+.six .container .parent .content p b 
+{
+    color: #000;    
+}
+.six .container .parent .content p i 
+{
+    color: green;
+    padding-right: 10px;
+}
+/* end sec six */
+/* start sec seven */
+.seven
+{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.seven .container .content1 a
+{
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--blue);
+}
+.seven .container .content1 a i 
+{
+    padding-left: 15px;
+}
+.seven .container .cards 
+{
+   background-color: rgb(247, 249, 251);
+   display: grid;
+   grid-template-columns: repeat(auto-fill , minmax(150px,auto)); 
+   gap: 40px; 
+   margin-top: 50px;
+   padding: 40px 10px 40px 50px;
+    
+}
+.seven .container .cards div 
+{
+    box-shadow: 0px 0px 0px;
+    border-width: 0px;
+    background-color: rgb(247, 249, 251);
+
+}
+.seven .container .cards div img 
+{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+.seven .container .cards div p 
+{
+    color: #000;
+    font-weight: 700;
+    padding: 10px;
+}
+/* end sec seven */
+/* start sec eight */
+.eight
+{
+    margin-bottom: 100px;
+}
+ .eight img 
+ {
+    width: 100%;
+    position: relative;
+ }
+ .eight .layout .container
+ {
+    display: flex;
+    padding: 15px 15px;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 50px;
+ }
+ .eight .layout .container .content
+ {
+    width: 50%;
+ }
+ .eight .layout 
+ {
+    width: 100%;
+    position: absolute;   
+    background-color:var(--blue2);
+ }
+ .eight .layout .container .content p.p1 
+ {
+    color: #58abeb;
+    font-weight: 600;
+    padding:20px 0px 10px 0px ;
+ }
+ .eight .layout .container .content h1 
+ {
+    color: white;
+    letter-spacing: -1px;
+    padding: 10px 0px;
+ }
+ .eight .layout .container .content p.p2 b 
+ {
+    color: white;
+ }
+ .eight .layout .container .content p.p2 , .eight .layout .container .content p.p3
+ {
+    color: rgb(227, 225, 225);
+    padding: 15px 0px ;
+ }
+ .eight .layout .container .box 
+ {
+    width: 25%;
+    font-weight: 100;
+    background-color: #022375ae;
+    padding: 30px;
+    margin-top: 50px;
+ }
+ .eight .layout .container .box p , .eight .layout .container .box h3
+ {
+    color: rgb(227, 225, 225);
+    font-weight: 100;
+ }
+ .eight .layout .container .box .icon 
+ {
+    margin: 15px 0px;
+ }
+ .eight .layout .container .box .icon p i 
+ {
+    padding-right: 15px;
+ }
+/* end sec eight */
+/* start sec nine */
+.nine 
+{
+    margin-bottom: 100px;
+}
+.nine .maindiv 
+{
+    display:flex; 
+    justify-content: center;
+    margin-top: 100px;
+}
+.nine .maindiv img 
+{
+    width: 500px;
+    height: 450px;
+    
+}
+.nine .maindiv .dont .advice
+{
+   display: flex;
+   align-items: center;
+   margin: 25px;
+   margin-right: 0px;
+}
+.nine .maindiv .dont .advice p
+{
+  padding-top: 5px;
+  color: var(--darkBlue);
+  padding-left: 15px;
+
+}
+.nine .maindiv .dont div .photo
+{
+   border: 3px solid red;
+   text-align: center;
+   border-radius: 50%;
+   margin-left: 15px;  
+}
+
+.nine .maindiv .dont div .photo img
+{
+   width: 70px;
+   height: 60px;
+   border-radius: 50%;
+}
+
+.nine .maindiv .dont div .photo i
+{
+   font-size: 20px;
+   color: red;
+
+   height: 20px;
+   width: 20px;
+
+}
+#green
+{
+   border: 3px solid green;
+}
+.nine .maindiv .dont div .photo i.green
+{
+   color: green;
+}
+/* end sec nine */
+/* start sec ten */
+.ten 
+{
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+.ten .container .cards
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(270px,auto));
+    background-color: rgb(247, 249, 251);
+    gap: 40px;
+    padding: 30px 15px;
+    align-items: center;
+    margin-top: 40px;
+
+}
+.ten .container .cards div
+{
+    background-color: white;
+    padding: 20px 0px;
+    margin: auto;
+}
+.ten .container .cards div p 
+{
+    text-align: center;
+    padding: 5px 10px;
+}
+.ten .container .cards div p b 
+{
+    color: var(--blue);
+    padding-top: 10px;
+}
+.ten .container .cards div img 
+{
+    max-width: 90%;
+    margin-left: 15px;
+}
+/* end sec ten */
+/* start sec ques */
+section.question
+{
+    margin: 200px 0px;
+}
+section.question .container .ques
+{
+    margin: 70px 0px 0px 0px;
+    display: flex;
+    justify-content:center;
+}
+section.question .container .ques .f-dep
+{
+    width: 300px;
+    background-color: white;
+}
+
+section.question .container .ques .f-dep p 
+{
+    color: #000;
+    display: flex;
+    padding: 10px;
+    border: 2px solid rgb(174, 171, 171);
+    margin-top: 10px;
+    cursor: pointer;
+}
+section.question .container .ques .f-dep p#one
+{
+    color:blue;
+    border-color: blue;
+}
+section.question .container .ques .f-dep p i
+{
+    margin-left: auto;
+}
+section.question .container .ques .sec-dep
+{
+    width: 500px;
+    margin-left: 80px;
+}
+section.question .container .ques .sec-dep div
+{
+    display: none;
+    transition: .9s ease-in-out;
+}
+section.question .container .ques .sec-dep div#one
+{
+    display: inline;
+}
+section.question .container .ques .sec-dep div p
+{
+    border: 2px solid gray;
+    color: #000;
+    padding: 10px;
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+    transition: .9s ease-in-out;
+}
+section.question .container .ques .sec-dep div p:hover
+{
+    color: blue;
+    border-color: blue;
+    cursor: pointer;
+}
+section.question .container .ques .sec-dep div p i
+{
+    margin-left: auto;
+}
+ 
+/* start sec ques */
+
+/* start footer */
+footer
+{
+    margin-top: 150px;
+}
+footer img 
+{
+    width: 100%;
+    position: relative;
+}
+footer .layout
+{
+    background-color:#03143f;
+    /* z-index: 999; */
+    position: absolute;
+    width: 100%;
+    padding: 30px;
+}
+footer .layout .container p.logo
+{
+    font-size: 25px;
+    font-weight: 800;
+    color: white;
+} 
+footer .layout .container p.p 
+{
+    padding-top: 10px;
+    max-width: 60%;
+}
+footer .layout .container p.logo img 
+{
+    width: 25px;
+    height: 25px;
+}
+footer .layout .container .links
+{
+    margin-top: 80px;
+}
+footer .layout .container .links a
+{
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  padding:7px 45px 7px 45px ;
+}
+footer .layout .container .links a.face
+{
+    background-color: var(--blue2);
+    margin-left: 10px;
+}
+footer .layout .container .links a.twitter
+{
+    background-color:var(--blue);
+    margin-left: 15px;
+    margin-right: 15px;
+}
+footer .layout .container .links a.insta
+{
+    background-color: rgb(221, 80, 80);
+}
+footer .layout .container .lists
+{
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,auto));
+    gap: 20px;
+}
+footer .layout .container .lists ul li.head
+{
+    color: white;
+    font-weight: 700;
+}
+footer .layout .container .lists ul li a
+{
+    text-decoration: none;
+    color:rgb(181, 175, 175);
+}
+footer .layout .container .lists ul li 
+{
+    list-style-type: none;
+    padding-top: 5px;
+}
+footer .layout .container hr 
+{
+    background-color: rgb(226, 223, 223);
+    border:.5px solid gray;
+    margin: 50px 0px;
+}
+footer .layout .container .last-content p.p 
+{
+    margin: 10px 0px;
+    max-width: 70%;
+}
+footer .layout .container .last-content p.p span
+{
+    margin-left: 100px;
+}
+footer .links2
+{
+    display: none;
+}
+
+
+/* end footer */
+
+
+/* start media query */
+ @media (max-width:767px)
+ {
+    .up
+    {
+        padding: 5px;
+    }
+    header .container a.logo
+    {
+        font-size: 20px;
+    }
+    header .container a.logo img 
+    {
+        width: 20px;
+        height: 20px;
+    }
+
+    header .container nav i
+    {
+        display: block;
+        /* margin-right: 50px; */
+        color: var(--gray);
+        font-size: 20px;
+    }
+    header .container nav a , header .container nav button
+    {
+        display: none;
+    }
+    .one .container
+    {
+        padding-top: 50px;
+        text-align: center;
+    }
+    .one .container img 
+    {
+        display: none;
+    }
+    .one .container .content .main-title p.p1 
+    {
+        font-size: 30px;
+    }
+    .one .container .content .main-title p.p2 ,p.p3
+    {
+        font-size: 15px;
+    }
+    .one .container .content .links 
+    {
+        margin: 20px 5px 20px 5px;
+    }
+    .one .container .content .links a
+    {
+        display: block;
+        margin-top: 10px;
+        text-align: center;
+        width:80% ;
+    }
+    .one .container .content .numbers
+    {
+        flex-direction: column;
+        margin: auto;
+        text-align: center;   
+        margin-bottom: 20px;
+    }
+    .one .container .content .numbers p
+    {
+        padding-bottom: 10px;
+    }
+    .one .container .content p.para2 ,p.para
+    {
+        width: 100%;
+    }
+    .two
+    {
+        margin-top: 100px;
+    }
+    .two .container
+    {
+        flex-direction: column;
+    }
+    .two .container .content
+    {
+        width: 100%;
+    }
+    .three .container .btn
+    {
+        margin: 50px auto;
+    }
+    .three .container .btn a 
+    {
+        margin-left: 10%;
+    }
+    .three .container .cards
+    {
+        gap: 40px;
+        padding: 20px;
+    }
+    .four .container .content1 p.p3 
+    {
+        width: 100%;
+    }
+    .four .container .last a.button
+    {
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+    .four .container .cards 
+    {
+        padding:60px 20px 20px 20px;
+    }
+    .four .container .last p
+    {
+        display: none;
+    }
+    .five .container .content1 p.p3 
+    {
+        display: none;
+    }
+ 
+    .five .links a
+    {
+        display: block;
+        margin: 10px; 
+    }
+    .six .container .parent 
+    {
+        flex-direction: column;
+    }
+    .six .container .parent p
+    {
+       padding: 0px 10px;
+    }
+    .six .container .parent .content p.head 
+    {
+        font-size: 20px;
+        text-align: center;
+    }
+    .six .container .parent img 
+    {
+        width: 200px;
+        height: 300px;
+        margin: auto;
+        padding-bottom: 15px;
+    }
+   .container .cards div
+    {
+        margin: auto;
+    }
+    .eight .layout .container
+    {
+        flex-direction: column;
+    }
+    .eight .layout .container .content , .eight .layout .container .box
+    {
+       width: 100%;
+    }
+    .nine 
+    {
+        margin-top: 1000px;
+    }
+    .nine .container .maindiv 
+    {
+        margin-right: 30px;
+        margin-top: 20px;
+    }
+    .nine .container .maindiv img.img
+    {
+        display: none;
+    }
+    .ten .container .cards
+    {
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(250px,auto));
+        gap: 50px;
+        padding: 30px 15px;
+        margin-top: 40px;
+    }
+    footer .layout .container .links a
+    {
+        display: block;
+        margin-top: 10px;
+    }
+    footer .layout .container p.p 
+    {
+        max-width: 100%;
+    }
+    footer .layout .container p.p ,  footer .layout .container .last-content p.p 
+    {
+       max-width: 100%;
+       margin: 10px 0px;
+    }
+    footer .layout .container .last-content p.p span 
+    {
+        margin-left: 40px;
+    }
+    footer .layout .container p.hide 
+    {
+       display: none;
+    } 
+    footer .links ,  footer .layout .container p.p1
+    {
+        display: none;
+    } 
+    footer .links2
+    {
+        display: block;
+        margin-top: 30px;
+    }
+    footer .links2 a 
+    {
+        font-size: 35px;
+        margin-left: 30px;
+        font-weight: 600;
+    }
+    footer .links2 .f 
+    {
+        color: #096eb6;
+    }
+    footer .links2 .t 
+    {
+        color: #0d81d9;
+    }
+    footer .links2 .i 
+    {
+        color: brown;
+    } 
+    .side-menu
+    {
+        width: 300px;
+    } 
+    section.question .container .ques
+    {
+        flex-direction: column;
+    }
+    section.question .container .ques .f-dep
+    {
+        width: 300px;
+    }
+    section.question .container .ques .sec-dep
+    {
+        width: 300px;
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+    
+ }
+
+
+ @media(min-width:768px) and (max-width:992px)
+ {
+    header .container nav a , header .container nav button 
+    {
+          display: none;
+    }
+    header .container nav i 
+    {
+        display: block;
+        font-size: 25px;
+        color: gray;
+    }
+    .one .container
+    {
+        flex-direction: column-reverse; 
+        align-items: center; 
+        margin-top: 30px;     
+    }
+    .one .container .content
+    { 
+        margin-top: 20px;
+        padding-left: 120px;
+    }
+    .one .container .content .links a i 
+    {
+        padding-left: 20px;
+    }
+    .one .container .content .numbers p  
+    {
+        margin-right:60px ;
+    } 
+    .one .container img 
+    {
+        width: 500px;
+    }
+    .two .container .questions
+    {
+        margin-top: 100px;
+    }
+    .three .container .btn
+    {
+        margin: 50px auto;
+    }
+    .three .container .btn a 
+    {
+        margin-left: 35%;
+    }
+    .eight .layout .container .content
+    {
+        width: 60%;
+    }
+    .eight .layout .container .box
+    {
+        width: 40%;
+    }
+    .nine 
+    {
+        margin-top: 400px;
+    }
+    .nine .container .maindiv img 
+    {
+        width: 300px;
+        height: 350px;
+    }
+    footer .layout .container .links
+    {
+        margin-top: 50px;
+    }
+    footer .layout .container .links a
+    {
+        padding: 10px 5px;     
+    }
+    footer .layout .container p.p1 
+    {
+       max-width: 100%;
+       margin: 25px 0px;
+    }
+    footer .layout .container p.p span 
+    {
+       display: none;
+    }  
+ } 
+
+ 
