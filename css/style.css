@@ -703,6 +703,7 @@ header .container nav i
 .nine 
 {
     margin-bottom: 100px;
+    margin-top: 100px;
 }
 .nine .maindiv 
 {
@@ -1084,6 +1085,11 @@ footer .links2
     {
         margin-left: 10px;
         margin-top: 5px;
+        padding: 3px;
+    }
+    .four .container .last a.button i
+    {
+        display: none;
     }
     .four .container .cards 
     {
@@ -1102,6 +1108,11 @@ footer .links2
     {
         display: block;
         margin: 10px; 
+        width: 100%;
+    }
+    .five .links a i
+    {
+        display: none;
     }
     .six .container .parent 
     {
@@ -1137,7 +1148,7 @@ footer .links2
     }
     .nine 
     {
-        margin-top: 1000px;
+        margin-top: 1200px;
     }
     .nine .container .maindiv 
     {
@@ -1215,14 +1226,27 @@ footer .links2
     }
     section.question .container .ques .f-dep
     {
-        width: 300px;
+        width: 250px;
     }
     section.question .container .ques .sec-dep
     {
-        width: 300px;
+        width: 250px;
         margin-left: 0px;
         margin-top: 30px;
     }
+    .five .links a i
+    {
+        padding-left: 0px;
+    }
+    .three .container .btn a 
+    {
+        padding: 3px;
+    } 
+    .three .container .btn a i
+    {
+        display: none;
+    }
+
     
  }
 
