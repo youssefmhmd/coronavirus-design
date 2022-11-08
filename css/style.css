@@ -1070,8 +1070,9 @@ footer .links2
     }
     .three .container .btn a 
     {
-        margin-left: 10%;
+        display: none;
     }
+
     .three .container .cards
     {
         gap: 40px;
